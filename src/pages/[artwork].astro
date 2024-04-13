@@ -1,0 +1,29 @@
+---
+import ArtworkTemplate from "@/templates/artwork-template.astro";
+import type { GetStaticPaths } from "astro";
+import { defaultLocale } from "astro.config.mjs";
+import { getCollection } from "astro:content";
+
+export const getStaticPaths = (async () => {
+	const artworks = await getCollection("art");
+
+	return artworks
+		.filter((artwork) => {
+			return artwork.slug.startsWith(defaultLocale);
+		})
+		.map((artwork) => {
+			const [_, ...slug] = artwork.slug.split("/");
+			return {
+				params: {
+					lang: defaultLocale,
+					artwork: slug.join("/"),
+				},
+				props: artwork,
+			};
+		});
+}) satisfies GetStaticPaths;
+
+const artwork = Astro.props;
+---
+
+<ArtworkTemplate {...artwork} />

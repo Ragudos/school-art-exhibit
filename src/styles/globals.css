@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+	:root {
+		--clr-background: 30 57% 89%;
+		--clr-foreground: 0 0% 0%;
+		--clr-primary: 30 67% 81%;
+		--clr-primary-foreground: 0 0% 0%;
+		--clr-secondary: 23 49% 58%;
+		--clr-secondary-foreground: 0 0% 0%;
+		--clr-accent: 27 40% 44%;
+		--clr-accent-foreground: 0 0% 100%;
+	}
+
+	[data-theme="dark"] {
+		--clr-background: 36 11% 9%;
+		--clr-foreground: 0 0% 100%;
+		--clr-primary: 30 67% 19%;
+		--clr-primary-foreground: 0 0% 100%;
+		--clr-secondary: 23 42% 21%;
+		--clr-secondary-foreground: 0 0% 100%;
+		--clr-accent: 27 41% 33%;
+		--clr-accent-foreground: 0 0% 100%;
+	}
+
+	html {
+		font-family: "Roboto", system-ui, sans-serif;
+	}
+
+	body {
+		@apply bg-background text-foreground overflow-x-hidden;
+	}
+
+	.font-brand {
+		font-family: "IBM Plex Serif", serif;
+	}
+
+	.body-container p {
+		@apply my-4;
+	}
+
+	details.dropdown {
+		@apply relative;
+	}
+
+	details.dropdown summary {
+		@apply bg-accent/20 hover:bg-accent/40 cursor-pointer;
+	}
+
+	details.dropdown[open] summary {
+		@apply bg-accent/40;
+	}
+}

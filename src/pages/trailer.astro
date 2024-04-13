@@ -1,0 +1,16 @@
+---
+import siteData from "@/data/site.json";
+import TrailerTemplate from "@/templates/trailer-template.astro";
+
+const locale = Astro.currentLocale;
+const siteTitle =
+	siteData.title.translations[
+		locale as keyof typeof siteData.title.translations
+	] || siteData.title.text;
+const siteDescription =
+	siteData.description.translations[
+		locale as keyof typeof siteData.description.translations
+	] || siteData.description.text;
+---
+
+<TrailerTemplate siteTitle={siteTitle} siteDescription={siteDescription} />

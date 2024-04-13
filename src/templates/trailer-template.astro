@@ -1,0 +1,45 @@
+---
+import siteData from "@/data/site.json";
+import Main from "@/layouts/main.astro";
+
+export type Props = {
+	siteTitle: string;
+	siteDescription: string;
+};
+
+const { siteDescription, siteTitle } = Astro.props;
+---
+
+<Main>
+	<div class="w-[98%] container">
+		<div class="border-accent border-4 rounded-md overflow-hidden">
+			<video controls autoplay="false" class="w-full aspect-video">
+				<source src="/trailer.mp4" type="video/mp4" />
+				HTML5 video tag is not supported. Please update your browser.
+			</video>
+		</div>
+		<h1 class="mt-8 text-xl md:text-2xl lg:text-4xl font-brand font-bold">
+			{siteTitle}
+		</h1>
+		<p class="mt-4">
+			{siteDescription}
+		</p>
+	</div>
+	<script>
+		function initializeVideo() {
+			const vid = document.querySelector("video");
+
+			if (!vid) {
+				return;
+			}
+			vid.disablePictureInPicture = true;
+			vid.volume = 0.25;
+			// Video unknowingly autoplays, so we pause it on pageload
+			vid.pause();
+		}
+
+		initializeVideo();
+
+		document.addEventListener("astro:page-load", initializeVideo);
+	</script>
+</Main>

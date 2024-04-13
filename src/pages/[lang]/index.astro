@@ -1,0 +1,27 @@
+---
+import Homepage from "@/templates/homepage.astro";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import { supportedLocales } from "../../../astro.config.mjs";
+
+export const getStaticPaths = (() => {
+	return supportedLocales.map((lang) => {
+		return {
+			params: {
+				lang,
+			},
+		};
+	});
+}) satisfies GetStaticPaths;
+
+const { lang } = Astro.params;
+
+const artworks = (await getCollection("art")).filter((artwork) => {
+	if (artwork.slug.split("/")[0] === lang) {
+		return artwork;
+	}
+});
+console.log(artworks.length);
+---
+
+<Homepage artworks={artworks} />

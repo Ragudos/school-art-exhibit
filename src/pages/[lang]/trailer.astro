@@ -1,0 +1,29 @@
+---
+import siteData from "@/data/site.json";
+import TrailerTemplate from "@/templates/trailer-template.astro";
+import type { GetStaticPaths } from "astro";
+import { supportedLocales } from "../../../astro.config.mjs";
+
+export const getStaticPaths = (() => {
+	return supportedLocales.map((lang) => {
+		return {
+			params: {
+				lang,
+			},
+		};
+	});
+}) satisfies GetStaticPaths;
+
+const { lang: locale } = Astro.params;
+
+const siteTitle =
+	siteData.title.translations[
+		locale as keyof typeof siteData.title.translations
+	] || siteData.title.text;
+const siteDescription =
+	siteData.description.translations[
+		locale as keyof typeof siteData.description.translations
+	] || siteData.description.text;
+---
+
+<TrailerTemplate siteTitle={siteTitle} siteDescription={siteDescription} />

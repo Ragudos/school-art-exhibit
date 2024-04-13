@@ -1,0 +1,12 @@
+---
+import Homepage from "@/templates/homepage.astro";
+import { getCollection } from "astro:content";
+
+const artworks = (await getCollection("art")).filter((artwork) => {
+	if (artwork.slug.split("/")[0] === Astro.currentLocale) {
+		return artwork;
+	}
+});
+---
+
+<Homepage artworks={artworks} />

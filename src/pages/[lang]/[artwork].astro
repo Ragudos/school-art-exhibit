@@ -1,0 +1,24 @@
+---
+import ArtworkTemplate from "@/templates/artwork-template.astro";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+
+export const getStaticPaths = (async () => {
+	const artworks = await getCollection("art");
+
+	return artworks.map((artwork) => {
+		const [lang, ...slug] = artwork.slug.split("/");
+		return {
+			params: {
+				lang,
+				artwork: slug.join("/"),
+			},
+			props: artwork,
+		};
+	});
+}) satisfies GetStaticPaths;
+
+const artwork = Astro.props;
+---
+
+<ArtworkTemplate {...artwork} />

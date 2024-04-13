@@ -1,0 +1,47 @@
+---
+import logo from "@/assets/logo.png";
+import { Image } from "astro:assets";
+
+import { defaultLocale } from "astro.config.mjs";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const locale = Astro.currentLocale;
+---
+
+<footer transition:persist class="footer border-t-[1px] border-slate-500">
+	<div
+		class="footer__wrapper container flex justify-between flex-col md:flex-row"
+	>
+		<div class="flex break-words gap-4 items-center">
+			<a
+				href={getRelativeLocaleUrl(locale || defaultLocale, "")}
+				class="font-brand font-bold"
+				title="Home"
+				aria-label="Go to homepage"
+			>
+				<Image
+					role="presentation"
+					src={logo}
+					width={32}
+					height={32}
+					alt=" "
+				/>
+			</a>
+
+			<small>
+				&copy; All artworks and trailer video are original works of the
+				respective artists.
+			</small>
+		</div>
+	</div>
+</footer>
+<style>
+	.footer {
+		--_height: 6rem;
+
+		height: var(--_height);
+
+		display: flex;
+		align-items: center;
+	}
+</style>

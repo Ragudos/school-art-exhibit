@@ -1,0 +1,194 @@
+---
+import Main from "@/layouts/main.astro";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { defaultLocale } from "astro.config.mjs";
+
+export type Props = {
+	artworks: CollectionEntry<"art">[];
+};
+
+const locale = Astro.currentLocale;
+const { artworks } = Astro.props;
+---
+
+<Main>
+	<section class="relative min-h-[80dvh]">
+		<h1 class="sr-only">Section of Artworks</h1>
+		<div
+			class="loader absolute min-h-[80dvh] w-[98%] mx-auto z-20 flex items-center justify-center flex-col"
+		>
+			<div
+				class="animate-spin border-2 rounded-full w-8 h-8 border-slate-500/50 border-r-foreground"
+			>
+			</div>
+			Loading... Please wait
+		</div>
+		<div id="masonry-grid" class="masonry-grid">
+			{
+				artworks.map((artwork, idx) => {
+					return (
+						<a
+							href={`/${artwork.slug}`}
+							class="masonry-item p-0 h-auto inline-block group relative overflow-hidden rounded-md mb-5 select-none"
+						>
+							<figure class="relative">
+								<Image
+									src={artwork.data.artwork}
+									alt={artwork.data.title}
+									width={500}
+									loading={idx <= 6 ? "eager" : "lazy"}
+								/>
+								<figcaption class="flex p-4 md:p-8 flex-col justify-end md:gap-2 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 will-change-[opacity,background-color] transition-[opacity,background-color] duration-200 absolute z-10 h-full group-focus-visible:bg-black/30 hover:bg-black/30 text-white w-full top-0 left-0">
+									<h2 class="text-xl md:text-2xl font-brand font-bold">
+										{artwork.data.title}
+									</h2>
+									<div class="font-medium md:text-lg">
+										by
+										{artwork.data.artist}
+									</div>
+								</figcaption>
+							</figure>
+						</a>
+					);
+				})
+			}
+		</div>
+	</section>
+	<style>
+		section {
+			padding-block: 2rem;
+		}
+
+		@media only screen and (min-width: 768px) {
+			section {
+				padding-inline: 1rem;
+			}
+		}
+
+		.masonry-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+
+			margin: 0 auto;
+		}
+
+		.masonry-grid,
+		.masonry-item,
+		.loader {
+			transition: opacity 250ms ease;
+		}
+
+		.loader {
+			pointer-events: none;
+			touch-action: none;
+		}
+
+		.masonry-item {
+			width: 90vw;
+			margin-inline: auto;
+			opacity: 0;
+			pointer-events: none;
+			touch-action: none;
+
+			max-width: 500px;
+		}
+
+		@media only screen and (min-width: 480px) {
+			.masonry-item {
+				width: 45vw;
+			}
+		}
+
+		@media only screen and (min-width: 690px) {
+			.masonry-item {
+				width: 30vw;
+			}
+		}
+
+		@media only screen and (min-width: 950px) {
+			.masonry-item {
+				width: 27.5vw;
+			}
+		}
+
+		@media only screen and (min-width: 1200px) {
+			.masonry-item {
+				width: 22.5vw;
+			}
+		}
+
+		@media only screen and (min-width: 1400px) {
+			.masonry-item {
+				width: 17.5vw;
+			}
+		}
+
+		.masonry-item[data-finished="true"] {
+			opacity: 1;
+			pointer-events: auto;
+			touch-action: auto;
+		}
+	</style>
+	<script>
+		import imagesLoaded from "imagesloaded";
+		import Masonry from "masonry-layout";
+
+		let masonry: Masonry | undefined;
+
+		function initMasonry() {
+			const grid = document.getElementById("masonry-grid");
+
+			if (!grid) {
+				// This means that we are not on the page
+				// where the masonry grid is present,
+				// since we are using the View
+				// Transitions API. Thus, we
+				// are rerunning this function on
+				// every page load. Refer to the
+				// event listener of "asto:page-load"
+				// below
+				return;
+			}
+
+			masonry = new Masonry(grid, {
+				itemSelector: ".masonry-item",
+				columnWidth: ".masonry-item",
+				fitWidth: true,
+				gutter: 20,
+				stagger: 20,
+				initLayout: false,
+				transitionDuration: "0ms",
+			});
+
+			if (masonry) {
+				masonry.once?.("layoutComplete", (items: any[]) => {
+					// @ts-ignore
+					document.querySelector(".loader")!.style.opacity = "0";
+					items.forEach((item) => {
+						item.element.setAttribute("data-finished", "true");
+					});
+				});
+
+				imagesLoaded(grid, () => {
+					if (masonry) {
+						masonry.layout?.();
+					}
+				});
+			}
+		}
+
+		initMasonry();
+
+		document.addEventListener("astro:after-swap", () => {
+			if (masonry) {
+				masonry.destroy?.();
+				masonry = undefined;
+			}
+		});
+		document.addEventListener("astro:page-load", initMasonry);
+	</script>
+</Main>

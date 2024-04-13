@@ -1,0 +1,110 @@
+---
+import Main from "@/layouts/main.astro";
+import { getImage, Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+export type Props = CollectionEntry<"art">;
+const artwork = Astro.props;
+
+const artworkOgImage = await getImage({
+	src: artwork.data.artwork,
+	width: 1200,
+	height: 630,
+	format: "webp",
+});
+const { Content } = await artwork.render();
+---
+
+<Main
+	og={{
+		title: artwork.data.title,
+		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
+		image: {
+			url: artworkOgImage.src,
+			width: artworkOgImage.options.width!,
+			height: artworkOgImage.options.height!,
+			alt: artwork.body,
+			type: artworkOgImage.options.format!,
+		},
+	}}
+>
+	<section
+		class="container artwork-section my-8 flex gap-8 flex-col items-center max-w-[500px] lg:max-w-[1400px] lg:items-start lg:flex-row"
+		aria-labelledby="artwork-section__title"
+	>
+		<figure>
+			<Image
+				src={artwork.data.artwork}
+				width={500}
+				alt=`Artwork titled ${artwork.data.title} by ${artwork.data.artist}`
+				loading="eager"
+				class="border-4 border-accent shadow-accent shadow-md rounded-md"
+			/>
+
+			<figcaption class="sr-only">
+				Artwork title {artwork.data.title} by {artwork.data.artist}
+			</figcaption>
+		</figure>
+		<div>
+			<h1
+				class="text-4xl md:text-6xl font-brand font-bold"
+				id="artwork-section__title"
+			>
+				{artwork.data.title}
+			</h1>
+			<div class="text-slate-500 text-lg md:text-2xl mt-2">
+				by
+				{artwork.data.artist}
+			</div>
+			<div class="mt-4 body-container">
+				<Content />
+			</div>
+			<div class="border-t-2 border-foreground mt-6 flex flex-wrap gap-8">
+				{
+					artwork.data.techniques ? (
+						<div>
+							<span class="font-semibold font-brand text-lg">
+								Techniques
+							</span>
+							<ul class="pl-4 list-disc">
+								{artwork.data.techniques.map((technique) => {
+									return (
+										<li>
+											<small>{technique}</small>
+										</li>
+									);
+								})}
+							</ul>
+						</div>
+					) : null
+				}
+				{
+					artwork.data.materials ? (
+						<div>
+							<span class="font-semibold font-brand text-lg">
+								Materials
+							</span>
+							<ul class="pl-4 list-disc">
+								{artwork.data.materials.map((material) => {
+									return (
+										<li>
+											<small>{material}</small>
+										</li>
+									);
+								})}
+							</ul>
+						</div>
+					) : null
+				}
+			</div>
+		</div>
+	</section>
+	<aside class="py-8">
+		<div></div>
+	</aside>
+	<style>
+		.artwork-section figure {
+			flex-shrink: 0;
+		}
+	</style>
+</Main>
