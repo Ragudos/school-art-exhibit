@@ -26,8 +26,6 @@ const { Content } = await artwork.render();
 	title={artwork.data.title}
 	description={`Artwork by ${artwork.data.artist} - ${artwork.data.title}`}
 	og={{
-		title: artwork.data.title,
-		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
 		image: {
 			url: artworkOgImage.src,
 			width: artworkOgImage.options.width!,

@@ -56,7 +56,6 @@ const siteTitle =
 ---
 
 <title>{props.title || siteTitle}</title>
-<meta name="og:locale" content={locale} />
 <meta name="description" content={props.description || siteDescription} />
 <meta
 	property="og:title"
@@ -75,16 +74,18 @@ const siteTitle =
 		/>
 	)
 }
+<meta name="og:locale" content={locale} />
 {
 	props.og?.image && (
 		<>
-			<meta property="og:image" content={props.og.image.url} />
-			{Astro.site && (
-				<meta
-					property="og:image:secure_url"
-					content={Astro.site.origin + props.og.image.url}
-				/>
-			)}
+			<meta
+				property="og:image"
+				content={Astro.site!.origin + props.og.image.url}
+			/>
+			<meta
+				property="og:image:secure_url"
+				content={Astro.site!.origin + props.og.image.url}
+			/>
 			<meta
 				property="og:image:width"
 				content={props.og.image.width.toString()}

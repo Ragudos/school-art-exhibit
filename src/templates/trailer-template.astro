@@ -20,10 +20,8 @@ const { siteDescription, siteTitle } = Astro.props;
 
 <Main
 	title="Trailer"
-	description=`Watch the trailer for ${siteTitle}`
+	description={`${siteTitle}. Watch the trailer now!`}
 	og={{
-		title: `Watch the trailer for ${siteTitle}`,
-		description: siteDescription,
 		image: {
 			url: trailerOgImage.src,
 			width: trailerOgImage.options.width!,
