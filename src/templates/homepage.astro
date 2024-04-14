@@ -15,8 +15,8 @@ const { artworks } = Astro.props;
 const homepageOgImage = await getImage({
 	src: homepageOgImageRaw,
 	format: "webp",
-	width: 1000,
-	height: 430,
+	width: 1200,
+	height: 630,
 });
 ---
 
@@ -195,7 +195,7 @@ const homepageOgImage = await getImage({
 	</style>
 	<script>
 		import imagesLoaded from "imagesloaded";
-import Masonry from "masonry-layout";
+		import Masonry from "masonry-layout";
 
 		let masonry: Masonry | undefined;
 
