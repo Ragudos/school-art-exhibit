@@ -37,7 +37,7 @@ const { artworks } = Astro.props;
 								<Image
 									src={artwork.data.artwork}
 									alt={artwork.data.title}
-									width={500}
+									widths={[200, 300, 400, 500]}
 									loading={idx <= 6 ? "eager" : "lazy"}
 								/>
 								<figcaption class="flex p-4 md:p-8 flex-col justify-end md:gap-2 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 will-change-[opacity,background-color] transition-[opacity,background-color] duration-200 absolute z-10 h-full group-focus-visible:bg-black/30 hover:bg-black/30 text-white w-full top-0 left-0">
