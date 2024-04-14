@@ -1,18 +1,37 @@
 ---
 import siteData from "@/data/site.json";
 import Main from "@/layouts/main.astro";
+import { getImage } from "astro:assets";
+import trailerOgImageRaw from "@/assets/trailer.png";
 
 export type Props = {
 	siteTitle: string;
 	siteDescription: string;
 };
 
+const trailerOgImage = await getImage({
+	src: trailerOgImageRaw,
+	width: 1200,
+	height: 630,
+	format: "webp",
+});
 const { siteDescription, siteTitle } = Astro.props;
 ---
 
 <Main
 	title="Trailer"
 	description=`Watch the trailer for ${siteTitle}`
+	og={{
+		title: `Watch the trailer for ${siteTitle}`,
+		description: siteDescription,
+		image: {
+			url: trailerOgImage.src,
+			width: trailerOgImage.options.width!,
+			height: trailerOgImage.options.height!,
+			type: trailerOgImage.options.format!,
+			alt: "An image of the trailer page",
+		},
+	}}
 	twitter={{
 		card: "player",
 		player: {
