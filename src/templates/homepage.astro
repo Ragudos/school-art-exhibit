@@ -27,8 +27,8 @@ const artworks = await Promise.all(
 const homepageOgImage = await getImage({
 	src: homepageOgImageRaw,
 	format: "webp",
-	width: 1200,
-	height: 630,
+	width: 1000,
+	height: 430,
 });
 ---
 
@@ -65,11 +65,11 @@ const homepageOgImage = await getImage({
 							<figure class="relative">
 								<Image
 									src={artwork.data.artwork}
-									width={500}
+									width={300}
 									alt={artwork.data.title}
 									loading={idx <= 6 ? "eager" : "lazy"}
 									format="webp"
-									quality={90}
+									quality={80}
 									style={`background-image: url(${artwork.initialImage.src})`}
 								/>
 								<figcaption class="flex p-4 md:p-8 flex-col justify-end md:gap-2 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 will-change-[opacity,background-color] transition-[opacity,background-color] duration-200 absolute z-10 h-full group-focus-visible:bg-black/30 hover:bg-black/30 text-white w-full top-0 left-0">
@@ -126,7 +126,7 @@ const homepageOgImage = await getImage({
 			pointer-events: none;
 			touch-action: none;
 
-			max-width: 500px;
+			max-width: 300px;
 		}
 
 		@media only screen and (min-width: 420px) {

@@ -8,7 +8,8 @@ const artwork = Astro.props;
 
 const artworkOgImage = await getImage({
 	src: artwork.data.artwork,
-	width: 800,
+	width: 1200,
+	height: 630,
 	quality: 80,
 	format: "webp",
 });
