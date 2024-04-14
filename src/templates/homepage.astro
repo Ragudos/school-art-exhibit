@@ -35,7 +35,7 @@ const homepageOgImage = await getImage({
 <Main
 	og={{
 		image: {
-			url: `${Astro.url.origin}/${homepageOgImage.src}`,
+			url: `${Astro.url.origin}${homepageOgImage.src}`,
 			width: homepageOgImage.options.width!,
 			height: homepageOgImage.options.height!,
 			type: homepageOgImage.options.format!,

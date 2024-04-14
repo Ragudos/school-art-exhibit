@@ -13,6 +13,12 @@ const artworkOgImage = await getImage({
 	quality: 80,
 	format: "webp",
 });
+const smallerImage = await getImage({
+	src: artwork.data.artwork,
+	width: 200,
+	quality: 80,
+	format: "webp",
+});
 const { Content } = await artwork.render();
 ---
 
@@ -23,7 +29,7 @@ const { Content } = await artwork.render();
 		title: artwork.data.title,
 		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
 		image: {
-			url: `${Astro.url.origin}/${artworkOgImage.src}`,
+			url: `${Astro.url.origin}${artworkOgImage.src}`,
 			width: artworkOgImage.options.width!,
 			height: artworkOgImage.options.height!,
 			alt: `An image of the artwork, ${artwork.data.title}`,
@@ -35,7 +41,7 @@ const { Content } = await artwork.render();
 		title: artwork.data.title,
 		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
 		image: {
-			url: `${Astro.url.origin}/${artworkOgImage.src}`,
+			url: `${Astro.url.origin}${artworkOgImage.src}`,
 			alt: `An image of the artwork, ${artwork.data.title}`,
 		},
 	}}
@@ -50,6 +56,7 @@ const { Content } = await artwork.render();
 				width={500}
 				alt=`Artwork titled ${artwork.data.title} by ${artwork.data.artist}`
 				loading="eager"
+				style={`background-image: url(${smallerImage.src})`}
 				class="border-4 border-accent shadow-accent shadow-md rounded-md"
 			/>
 
