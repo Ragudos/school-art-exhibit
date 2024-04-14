@@ -54,3 +54,11 @@
 		@apply bg-accent/40;
 	}
 }
+
+img {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	font-style: italic;
+}

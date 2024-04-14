@@ -1,6 +1,6 @@
 ---
 import Main from "@/layouts/main.astro";
-import { Image } from "astro:assets";
+import { getImage, Image, Picture } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { defaultLocale } from "astro.config.mjs";
@@ -9,8 +9,19 @@ export type Props = {
 	artworks: CollectionEntry<"art">[];
 };
 
-const locale = Astro.currentLocale;
-const { artworks } = Astro.props;
+const { artworks: artworkProps } = Astro.props;
+const artworks = await Promise.all(
+	artworkProps.map(async (artwork) => {
+		return {
+			...artwork,
+			initialImage: await getImage({
+				src: artwork.data.artwork,
+				width: 50,
+				format: "webp",
+			}),
+		};
+	}),
+);
 ---
 
 <Main>
@@ -36,9 +47,12 @@ const { artworks } = Astro.props;
 							<figure class="relative">
 								<Image
 									src={artwork.data.artwork}
+									width={500}
 									alt={artwork.data.title}
-									widths={[200, 300, 400, 500]}
 									loading={idx <= 6 ? "eager" : "lazy"}
+									format="webp"
+									quality={90}
+									style={`background-image: url(${artwork.initialImage.src})`}
 								/>
 								<figcaption class="flex p-4 md:p-8 flex-col justify-end md:gap-2 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 will-change-[opacity,background-color] transition-[opacity,background-color] duration-200 absolute z-10 h-full group-focus-visible:bg-black/30 hover:bg-black/30 text-white w-full top-0 left-0">
 									<h2 class="text-xl md:text-2xl font-brand font-bold">
@@ -134,7 +148,6 @@ const { artworks } = Astro.props;
 		}
 	</style>
 	<script>
-		import imagesLoaded from "imagesloaded";
 		import Masonry from "masonry-layout";
 
 		let masonry: Masonry | undefined;
@@ -173,11 +186,11 @@ const { artworks } = Astro.props;
 					});
 				});
 
-				imagesLoaded(grid, () => {
-					if (masonry) {
-						masonry.layout?.();
-					}
-				});
+				if (masonry) {
+					imagesLoaded(grid, () => {
+						masonry?.layout?.();
+					});
+				}
 			}
 		}
 
