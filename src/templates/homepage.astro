@@ -53,9 +53,8 @@ const homepageOgImage = await getImage({
 							<figure class="relative">
 								<Image
 									src={artwork.data.artwork}
-									width={300}
+									width={450}
 									alt={artwork.data.title}
-									loading={idx <= 6 ? "eager" : "lazy"}
 									format="webp"
 									quality={50}
 								/>
@@ -130,7 +129,7 @@ const homepageOgImage = await getImage({
 
 			margin-inline: auto;
 
-			max-width: 300px;
+			max-width: 450px;
 		}
 
 		@media only screen and (min-width: 420px) {
