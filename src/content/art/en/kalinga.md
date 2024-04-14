@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/traditional/kalinga.webp
-title: Kalinga
+title: Motherly care
 artist: Ramirez
 category: traditional
 materials:
@@ -11,8 +11,6 @@ materials:
     - Wet wipes
     - Tape
 ---
-
-In the Filipino language, Kalinga means protecting and caring for someone.
 
 A Filipino mother and a child are both represented in this work of art as they display affection and protectiveness toward each other.
 

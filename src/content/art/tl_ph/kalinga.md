@@ -12,4 +12,8 @@ materials:
     - Tape
 ---
 
-In the Filipino language, Kalinga means protecting and caring for someone. A Filipino mother and a child are both represented in this work of art as they display affection and protectiveness toward each other. Seeing this artwork might remind you of the times when they would wait patiently for you to come home and took care of you through physical touch and verbal and emotional affirmation.
+Sa wika ng Filipino, ang Kalinga ay nangangahulugang pag-aalaga at pangangalaga sa isang tao.
+
+Isang ina at isang bata ang parehong kinakatawan sa likhang sining na ito habang ipinapakita nila ang pagmamahal at pangangalaga sa isa't isa.
+
+Ang pagtingin sa likhang sining na ito ay maaaring magpapaalala sa iyo sa mga pagkakataon na kanilang hinintay ka nang may pagtitiyaga na umuwi at inalagaan ka sa pamamagitan ng pisikal na yakap at mga salitang nagpapatibay ng emosyon at pagmamahal.

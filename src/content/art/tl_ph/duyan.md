@@ -13,4 +13,6 @@ materials:
     - Lightroom app
 ---
 
-From the words of Mr. Ygar, M.: "A 'duyan,' or swing, served as my favorite spot when I was younger. My parents and I spend the most of our time here. I remember giggling as they swung me up high as the wind brushes my skin. A sentimental moment to remember. That's why a 'duyan' has always been my favorite spot to visit when I want to reminisce about my youth."
+Mula sa mga salita ni G. Ygar, M.:
+
+"Ang 'duyan,' o swing, ang naging paborito kong lugar noong ako'y bata pa. Dito kami madalas magpalipas ng oras ng aking mga magulang. Naalala ko ang aking pagtawa habang itinutulak nila ako nang mataas habang hinahaplos ng hangin ang aking balat. Isang sentimental na sandali na aking maaalala. Kaya naman ang 'duyan' ay palaging naging paborito kong lugar na binibisita kapag nais kong balikan ang aking kabataan."

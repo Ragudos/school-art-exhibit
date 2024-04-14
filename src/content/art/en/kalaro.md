@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/photography/kalaro.webp
-title: Kalaro
+title: Playmate
 artist: Ygar, J.
 category: photography
 techniques:

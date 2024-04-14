@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/photography/duyan.webp
-title: Duyan
+title: Swing
 artist: Ygar, M.
 category: photography
 techniques:

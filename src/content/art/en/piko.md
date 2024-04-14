@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/photography/piko.webp
-title: Nostalgia
+title: Piko
 artist: Vasquez
 category: photography
 materials:

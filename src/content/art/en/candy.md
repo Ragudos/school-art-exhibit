@@ -1,7 +1,7 @@
 ---
 artwork: ../../../assets/photography/candy.webp
 title: Candy
-artist: Vasquez
+artist: Salcedo
 category: photography
 materials:
     - Phone camera

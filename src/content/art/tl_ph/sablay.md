@@ -9,4 +9,6 @@ materials:
     - Adobe Photosop
 ---
 
-Made in pixel art style, 'Sablay' is an attempt to relive the joys and tribulations of playing the classic pinoy game 'Tumbang Preso'. The old pinoy youth revels in playing games carefree yet rowdily, competitive yet casual, and grueling yet fun.
+Ginawa sa estilo ng pixel art, ang 'Sablay' ay isang pagsubok na balikan ang kasiyahan at mga pagsubok ng paglalaro ng klasikong laro ng Pinoy na 'Tumbang Preso'.
+
+Ang mga lumang kabataan ng Pinoy ay natutuwa sa paglalaro ng mga laro nang mapayapa at makulit, may pagpapaligsahan ngunit hindi masyadong seryoso, at mahirap ngunit masaya.

@@ -8,4 +8,8 @@ materials:
     - Snapseed app
 ---
 
-Piko is one of the well-known childhood games played by Filipinos. A pattern of boxes is drawn on a concrete floor using chalk or a soft stone to play this game. The pamato used by players is a stone that they toss into a box before skipping forward and backward. They will keep doing this until they finish the level or get the boxes as their own/bahay.",
+Ang Piko ay isa sa mga kilalang laro ng kabataan na nilalaro ng mga Pilipino.
+
+Isang disenyo ng mga kahon ay isinasagisag sa semento gamit ang tisa o malambot na bato upang laruin ang laro na ito.
+
+Ang pamato na ginagamit ng mga manlalaro ay isang bato na inihahagis nila sa loob ng isang kahon bago magpatuloy sa pagtalon pataas at pababa. Ipagpapatuloy nila ito hanggang sa matapos ang antas o makuha nila ang mga kahon bilang kanilang sarili o "bahay".

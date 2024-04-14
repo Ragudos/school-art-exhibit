@@ -15,4 +15,8 @@ materials:
     - Ruler
 ---
 
-When we were younger, the only way we could release our urge to beat people and socialize was by going outside. We met new friends and had fun, didn't we? And those times were more tranquil and it gave you a peace of mind since technology like smartphones and social media didn't exist then. The artwork shows some of the games that one would usually play during their childhood to pass their time like tumbang preso, taya-tayaan (a game of tag), luksong baka, and many more.
+Noong tayo ay mas bata pa, ang tanging paraan para mailabas ang ating kagustuhang makipaglaro sa mga tao at makipag-ugnayan ay sa pamamagitan ng paglabas. Nakakakilala tayo ng bagong mga kaibigan at nag-enjoy, di ba?
+
+Ang mga panahong iyon ay mas tahimik at nagbibigay sa iyo ng katahimikan ng isip dahil wala pang teknolohiyang tulad ng smartphones at social media noon.
+
+Ipinalalabas ng likhang sining ang ilan sa mga laro na karaniwang nilalaro ng mga bata noong kanilang kabataan para maglaan ng oras tulad ng tumbang preso, taya-tayaan (isang laro ng tag), luksong baka, at marami pang iba.

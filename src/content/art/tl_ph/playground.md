@@ -13,4 +13,8 @@ materials:
     - Lightroom app
 ---
 
-As children, going to a playground makes our hearts race. It's a wonderful place where we can have fun without worrying knowing our parents are watching over us from afar. This is a place where we once had a short-term buddy who we might never see again and a place where we wrote the unforgettable plays of our youth.
+Bilang mga bata, ang pagpunta sa isang playground ay nagpapabilis ng tibok ng ating mga puso.
+
+Ito ay isang kahanga-hangang lugar kung saan maaari tayong maglaro nang walang iniisip na alam nating ang ating mga magulang ay nagbabantay sa atin mula sa malayo.
+
+Ito ay isang lugar kung saan minsan ay mayroon tayong pansamantalang kaibigan na maaaring hindi na natin makikita ulit at isang lugar kung saan nagsulat tayo ng di-malilimutang mga karanasan ng ating kabataan.

@@ -9,4 +9,8 @@ materials:
     - IbisPaint X
 ---
 
-Reminiscence allows you to remember the good ol' days, and this artwork does just that. The moments way back during your childhood where you could still do everything freely, play outside as if there was no problem, play the famous childhood games “sungka”, “jolens”, “luksong lubid”, and also the popular toy of all time, the “trumpo” that was used mostly by boys. Those were the things that remain only as a fragment of your past, the happiest parts of your life that will linger within you and everyone else --- Forever.
+Ang pagbabalik-tanaw ay nagpapahintulot sa iyo na maalala ang mga magagandang araw ng nakaraan, at ito ang ginagawa ng sining na ito.
+
+Ang mga sandali noong iyong kabataan kung saan maaari kang gawin ang lahat ng bagay nang malaya, maglaro sa labas nang parang walang problema, maglaro ng mga kilalang laro ng kabataan tulad ng "sungka", "jolens", "luksong lubid", at pati na rin ang pinakasikat na laruan ng lahat ng panahon, ang "trumpo" na kadalasang ginagamit ng mga batang lalaki.
+
+Ito ang mga bagay na nananatili lamang bilang isang piraso ng iyong nakaraan, ang pinakamaligayang bahagi ng iyong buhay na mananatili sa loob mo at sa lahat ng iba --- Magpakailanman.

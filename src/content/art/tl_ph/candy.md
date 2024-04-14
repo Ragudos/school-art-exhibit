@@ -1,7 +1,7 @@
 ---
 artwork: ../../../assets/photography/candy.webp
-title: Candy
-artist: Vasquez
+title: Kendi
+artist: Salcedo
 category: photography
 materials:
     - Phone camera
@@ -9,4 +9,8 @@ materials:
     - Afterlight app
 ---
 
-This shelf of toothsome candies in Divisoria we used to eat as a child reminds us of the deciduous or baby teeth we lost due to our parents' insistence that we always eat sweets. Some popular candies on this shelf are Stick-O, Frutos, Pintoora, Pochi, Flat Tops, Champi, and Haw Haw Milk Candy. But honestly, in the colorful array before us, these childhood snacks and candies were what attracted our hungry little eyes, which resulted to our adorable little smiles.
+Ang estanteng ito ng mga masasarap na kendi sa Divisoria na kinakain namin noong bata pa kami ay nagpapaalala sa amin sa mga naglagas na ngipin o baby teeth na nawala dahil sa pagpupumilit ng aming mga magulang na palaging kumain ng matatamis.
+
+Ilan sa mga sikat na kendi sa estanteng ito ay Stick-O, Frutos, Pintoora, Pochi, Flat Tops, Champi, at Haw Haw Milk Candy.
+
+Ngunit tapatang sabihin, sa makulay na hanay na nasa harapan namin, ang mga kendi at meryendang ito ng kabataan ang talagang nakahumaling sa aming mga gutom na mata, na siyang nagbunga sa aming kaakit-akit na mga ngiti.

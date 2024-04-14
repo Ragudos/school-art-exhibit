@@ -10,4 +10,4 @@ materials:
     - IbixPaint X
 ---
 
-Made in a creepy charcoal texture artstyle, A childhood fear is expressed through this art. An evil spirit from the filipino folklore called a “Tikbalang” is feared among children whenever they roam around trees.
+Ginawa sa isang nakakatakot na tekstura gamit ang uling, ipinapahayag ng likhang sining na ito ang takot ng kabataan. Ang isang masamang espiritu mula sa alamat ng Pilipino na tinatawag na "Tikbalang" ay kinatatakutan ng mga bata tuwing sila ay naglalakad sa paligid ng mga puno.

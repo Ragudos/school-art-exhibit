@@ -14,4 +14,8 @@ materials:
     - Drawing pen
 ---
 
-When we talk about food during childhood, how could we not remember the merienda that our mothers used to prepare for us in the afternoon? Or perhaps the food we buy from the street vendors that pass our homes? Merienda has been a big part of our life growing up since most of the time we sit, eat, and talk to not just our family, but our friends too while eating indoors or outdoors.
+Kapag nag-uusap tayo tungkol sa pagkain noong kabataan, paano natin malilimutan ang merienda na inihahanda ng ating mga ina para sa atin sa hapon?
+
+Marahil ang pagkain na binibili natin mula sa mga naglalako sa kalsada na dumaan sa aming mga tahanan?
+
+Ang merienda ay naging malaking bahagi ng ating buhay habang lumalaki dahil karamihan sa oras ay nakaupo tayo, kumakain, at nakikipag-usap hindi lamang sa aming pamilya, kundi pati na rin sa aming mga kaibigan habang kumakain sa loob o labas ng bahay.

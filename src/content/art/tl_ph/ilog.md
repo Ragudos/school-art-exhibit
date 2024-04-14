@@ -11,6 +11,8 @@ materials:
     - VSCO app
 ---
 
-From the words of Ms. Salcedo:
+Mula sa mga salita ni Gng. Salcedo:
 
-“We were waiting for the rain to stop inside the UP Diliman campus and heard three clever little boys playing at the back of the waiting shed. Having been in this situation myself as a child, it did not matter if the river had a speck of impure dirt on it while we were swimming and playing. The sight of them brightened my day, and I thought it would be nice to ask them for a picture as I suddenly recalled every little moment we had on a river with my cousins back when we were still young."
+"Kami ay naghihintay na tumila ang ulan sa loob ng kampus ng UP Diliman at narinig namin ang tatlong matalinong batang lalaki na naglalaro sa likod ng waiting shed. Naranasan ko rin ito noong ako'y bata pa, hindi mahalaga kung may kaunting dumi ang ilog habang kami ay lumalangoy at naglalaro.
+
+Ang pagmasdan sila ay nagpasaya ng aking araw, at naisip ko na maganda sigurong hingin ang kanilang larawan habang bigla kong naalala ang bawat munting sandali na kasama ang aking mga pinsan sa ilog noong kami ay bata pa."

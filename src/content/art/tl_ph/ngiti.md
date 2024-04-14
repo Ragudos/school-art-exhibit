@@ -12,4 +12,8 @@ materials:
     - VSCO app
 ---
 
-From the words of Ms. Salcedo: “I got used to the fact that there are always children playing in front of our house but the moment I took this picture, two adorable little neighbor girls were just watching me key unlock the door as I got home from school on November 23, 2022. They caught my eye for their matching purple headbands, and cute dresses, and we chatted for a bit, asked their names, how old they were, and what color they liked. I was lifted up by the chit-chat we had, recalling how I used to think the world was just about playing, colors, laughter, offering undivided attention, and learning something new from every new experience.”
+Sa mga salita ni Gng. Salcedo:
+
+"Sanay na ako sa katotohanang palaging may mga batang naglalaro sa harap ng aming bahay ngunit noong kuhanan ko ng larawan ito, dalawang kaakit-akit na batang kapitbahay ang biglang tumingin sa akin habang binubuksan ko ang pinto gamit ang susi pagdating ko mula sa paaralan noong ika-23 ng Nobyembre, 2022. Kinuha nila ang aking pansin para sa kanilang magkatugmang lilang headbands, at mga magagandang damit, at kami ay nagkausap sandali, tinanong ang kanilang mga pangalan, ilang taon na sila, at anong kulay ang gusto nila.
+
+Aking naramdaman ang kasiyahan sa aming maigsing usapan, naaalala kung paano ko noon iniisip na ang mundo ay tungkol lamang sa paglalaro, kulay, tawanan, pag-aalay ng buong atensyon, at pag-aaral ng bagong bagay mula sa bawat bagong karanasan."

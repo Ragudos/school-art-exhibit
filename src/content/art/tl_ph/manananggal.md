@@ -9,14 +9,14 @@ materials:
     - IbixPaint X
 ---
 
-The silence comes along as the sun hides under the Earth, leaving nothing but darkness. In the midst of chirping insects and hooting owls, stood a decrepit and scary-looking woman hungry for babies.
+Ang katahimikan ay dumarating habang ang araw ay nagtatago sa ilalim ng lupa, iniwan ang lahat ng dilim. Sa gitna ng mga nagtutulakang insekto at humuhuni na mga kuwago, nagtatayo ng isang marupok at nakakatakot na babae na uhaw sa mga sanggol.
 
-With each crunch, a part of her hip is separated from her torso.
+Sa bawat pagnguya, isang bahagi ng kanyang balakang ay nahahati mula sa kanyang katawan.
 
-Ever-so-slowly, she pulled them apart and her insides quickly got pulled by gravity, leaving them hanging like clothes being dried out in the sun.
+Sa mabagal na pag-ikot, hinati niya ang mga ito at ang kanyang mga kalooban ay agad na hinatak ng grabidad, iniwan ang mga ito na nakasabit tulad ng damit na natutuyo sa sikat ng araw.
 
-She flew off into the dark moonlit sky with her bat-like wings spread open, and laughed eerily as to hint the nearby families that it's time for her to hunt. For babies!
+Lumipad siya palayo patungo sa madilim at nababagong langit na sinasalubong ang kanyang pakpak na tulad ng paniki, at nakakatakot na tumawa upang ipahiwatig sa mga kalapit na pamilya na oras na para sa kanya na manghuli. Ng sanggol!
 
-Most of the Filipino children fear this mythological creature.
+Karamihan sa mga bata sa Pilipinas ay natatakot sa mitolohikal na nilalang na ito.
 
-It's a vampire-like lady that detaches their lower half in order to fly and hunt babies and children which is why it is feared among children.
+Isang bampira tulad na babae na naghihiwalay ng kanilang ibaba upang lumipad at manghuli ng mga sanggol at mga bata kaya't ito ay kinatatakutan ng mga bata.

@@ -4,10 +4,11 @@ import Header from "@/components/header.astro";
 import type { SeoProps } from "@/components/seo.astro";
 import Seo from "@/components/seo.astro";
 import "@/styles/globals.css";
-import { defaultLocale } from "astro.config.mjs";
+import { defaultLocale, supportedLocales } from "astro.config.mjs";
 import { ViewTransitions } from "astro:transitions";
 
 import { THEME_KEY } from "@/lib/consts";
+import { getRelativeLocaleUrl } from "astro:i18n";
 export type Props = SeoProps;
 
 const props = Astro.props;

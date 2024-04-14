@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/photography/kalye.webp
-title: Kalye
+title: Roadside
 artist: Vasquez
 category: photography
 materials:

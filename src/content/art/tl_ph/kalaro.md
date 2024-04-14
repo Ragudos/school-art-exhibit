@@ -11,4 +11,6 @@ materials:
     - Lightroom app
 ---
 
-The nicest part of my youth was having a 'kalaro,' or playmate. They used to make me laugh. I remember that. They were the ones with whom I used to hang out until dusk without being frightened about our mother's calls. The fellas on whom I created my amazing childhood experiences.
+Mula sa mga salita ni G. Ygar, J.:
+
+"Ang pinakamasayang parte ng aking kabataan ay ang pagkakaroon ng 'kalaro.' Sila ang madalas magpatawa sa akin. Naalala ko iyon. Sila ang mga kasama ko hanggang paglubog ng araw nang hindi natatakot sa mga tawag ng aming ina. Sila ang mga kasamang bumuo ng aking kahanga-hangang karanasan noong ako'y bata pa."

@@ -8,4 +8,8 @@ materials:
     - Lightroom app
 ---
 
-Do you recall your earlier days of playing in the “kalye” or streets? running with your friends until dusk while laughing aloud. These “kalye” serve as both a constant reminder of how carefree our youth was and a repository for our most priceless childhood memories.
+Noong tayo ay mas bata pa, ang tanging paraan para mailabas ang ating kagustuhang makipaglaro sa mga tao at makipag-ugnayan ay sa pamamagitan ng paglabas. Nakakakilala tayo ng bagong mga kaibigan at nag-enjoy, di ba?
+
+Ang mga panahong iyon ay mas tahimik at nagbibigay sa iyo ng katahimikan ng isip dahil wala pang teknolohiyang tulad ng smartphones at social media noon.
+
+Ipinalalabas ng likhang sining ang ilan sa mga laro na karaniwang nilalaro ng mga bata noong kanilang kabataan para maglaan ng oras tulad ng tumbang preso, taya-tayaan (isang laro ng tag), luksong baka, at marami pang iba.

@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/photography/carousel.webp
-title: Carousel
+title: Tiyubibo
 artist: Vasquez
 category: photography
 materials:
@@ -8,4 +8,6 @@ materials:
     - Lightroom app
 ---
 
-When we were little, we would ask our parents to let us ride the carousel or merry-go-round that we would see in parks or malls. Due to its flashing lights, catchy melodies, and the horses that circle around, this ride is noticeable for children.
+Noong kami ay bata pa, madalas naming hilingin sa aming mga magulang na payagan kaming sumakay sa tiyubibo o merry-go-round na nakikita namin sa mga parke o mall.
+
+Dahil sa kumikislap na mga ilaw, nakakahumaling na mga himig, at mga kabayong umiikot, kapansin-pansin talaga ang sakayang ito para sa mga bata.

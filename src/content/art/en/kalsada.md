@@ -1,6 +1,6 @@
 ---
 artwork: ../../../assets/traditional/kalsada.webp
-title: Kalsada
+title: Roadside
 artist: Ordinario
 category: traditional
 techniques:
