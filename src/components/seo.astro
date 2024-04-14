@@ -71,7 +71,7 @@ const siteTitle =
 	Astro.site && (
 		<meta
 			property="og:url"
-			content={Astro.site.origin + Astro.site.pathname}
+			content={Astro.site.origin + Astro.url.pathname}
 		/>
 	)
 }
