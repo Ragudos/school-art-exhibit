@@ -10,7 +10,19 @@ export type Props = {
 const { siteDescription, siteTitle } = Astro.props;
 ---
 
-<Main>
+<Main
+	title="Trailer"
+	description=`Watch the trailer for ${siteTitle}`
+	twitter={{
+		card: "player",
+		player: {
+			iframeUrl: Astro.url.origin + "/iframe",
+			streamUrl: Astro.url.origin + "/trailer.mp4",
+			width: 640,
+			height: 360,
+		},
+	}}
+>
 	<div class="w-[98%] container">
 		<div class="border-accent border-4 rounded-md overflow-hidden">
 			<video controls autoplay="false" class="w-full aspect-video">

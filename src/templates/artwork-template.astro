@@ -8,23 +8,34 @@ const artwork = Astro.props;
 
 const artworkOgImage = await getImage({
 	src: artwork.data.artwork,
-	width: 1200,
-	height: 630,
+	width: 800,
+	quality: 80,
 	format: "webp",
 });
 const { Content } = await artwork.render();
 ---
 
 <Main
+	title={artwork.data.title}
+	description={`Artwork by ${artwork.data.artist} - ${artwork.data.title}`}
 	og={{
 		title: artwork.data.title,
 		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
 		image: {
-			url: artworkOgImage.src,
+			url: `${Astro.url.origin}/${artworkOgImage.src}`,
 			width: artworkOgImage.options.width!,
 			height: artworkOgImage.options.height!,
 			alt: `An image of the artwork, ${artwork.data.title}`,
 			type: artworkOgImage.options.format!,
+		},
+	}}
+	twitter={{
+		card: "summary_large_image",
+		title: artwork.data.title,
+		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
+		image: {
+			url: `${Astro.url.origin}/${artworkOgImage.src}`,
+			alt: `An image of the artwork, ${artwork.data.title}`,
 		},
 	}}
 >
