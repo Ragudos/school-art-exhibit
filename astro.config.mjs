@@ -7,6 +7,7 @@ export const defaultLocale = "tl_ph";
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind()],
+	site: "https://artexhibit-tip.netlify.app",
 	i18n: {
 		defaultLocale,
 		locales: supportedLocales,

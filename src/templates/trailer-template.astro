@@ -16,8 +16,9 @@ const { siteDescription, siteTitle } = Astro.props;
 	twitter={{
 		card: "player",
 		player: {
-			iframeUrl: Astro.url.origin + "/iframe",
-			streamUrl: Astro.url.origin + "/trailer.mp4",
+			iframeUrl: (Astro.site?.origin || Astro.url.origin) + "/iframe",
+			streamUrl:
+				(Astro.site?.origin || Astro.url.origin) + "/trailer.mp4",
 			width: 640,
 			height: 360,
 		},

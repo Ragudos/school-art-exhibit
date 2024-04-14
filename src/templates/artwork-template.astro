@@ -29,7 +29,7 @@ const { Content } = await artwork.render();
 		title: artwork.data.title,
 		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
 		image: {
-			url: `${Astro.url.origin}${artworkOgImage.src}`,
+			url: `${Astro.site?.origin || Astro.url.origin}${artworkOgImage.src}`,
 			width: artworkOgImage.options.width!,
 			height: artworkOgImage.options.height!,
 			alt: `An image of the artwork, ${artwork.data.title}`,
@@ -41,7 +41,7 @@ const { Content } = await artwork.render();
 		title: artwork.data.title,
 		description: `Artwork by ${artwork.data.artist} - ${artwork.data.title}`,
 		image: {
-			url: `${Astro.url.origin}${artworkOgImage.src}`,
+			url: `${Astro.site?.origin || Astro.url.origin}${artworkOgImage.src}`,
 			alt: `An image of the artwork, ${artwork.data.title}`,
 		},
 	}}
