@@ -138,5 +138,54 @@ const props = Astro.props;
 			<slot />
 		</main>
 		<Footer />
+		<section
+			transition:persist
+			class="fixed touch-none pointer-events-none z-50 top-2 right-4 toast-container"
+		>
+			<div
+				class="flex gap-2 items-center bg-accent text-accent-foreground px-4 py-2 shadow-md shadow-accent/50 w-40 rounded-sm"
+				id="loading-toast"
+			>
+				<div
+					class="shrink-0 w-4 h-4 animate-spin border-2 border-slate-500/50 border-r-accent-foreground rounded-full"
+				>
+				</div>
+				<div>Loading...</div>
+			</div>
+		</section>
+		<style>
+			#loading-toast {
+				transition: transform 250ms ease;
+				transform: scale(0);
+			}
+
+			.toast-container > * {
+				pointer-events: auto;
+				touch-action: auto;
+			}
+		</style>
+		<script>
+			let timeout: number | undefined;
+
+			document.addEventListener("astro:before-preparation", () => {
+				timeout = setTimeout(() => {
+					const loadingToast =
+						document.getElementById("loading-toast")!;
+
+					loadingToast.style.transform = "scale(1)";
+				}, 250);
+			});
+
+			document.addEventListener("astro:after-swap", () => {
+				if (timeout) {
+					clearTimeout(timeout);
+					timeout = undefined;
+				}
+
+				const loadingToast = document.getElementById("loading-toast")!;
+
+				loadingToast.style.transform = "scale(0)";
+			});
+		</script>
 	</body>
 </html>
