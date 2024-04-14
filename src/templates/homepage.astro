@@ -23,7 +23,7 @@ const homepageOgImage = await getImage({
 <Main
 	og={{
 		image: {
-			url: `${Astro.site?.origin || Astro.url.origin}${homepageOgImage.src}`,
+			url: homepageOgImage.src,
 			width: homepageOgImage.options.width!,
 			height: homepageOgImage.options.height!,
 			type: homepageOgImage.options.format!,
@@ -195,7 +195,7 @@ const homepageOgImage = await getImage({
 	</style>
 	<script>
 		import imagesLoaded from "imagesloaded";
-		import Masonry from "masonry-layout";
+import Masonry from "masonry-layout";
 
 		let masonry: Masonry | undefined;
 
