@@ -23,7 +23,7 @@ const { Content } = await artwork.render();
 			url: artworkOgImage.src,
 			width: artworkOgImage.options.width!,
 			height: artworkOgImage.options.height!,
-			alt: artwork.body,
+			alt: `An image of the artwork, ${artwork.data.title}`,
 			type: artworkOgImage.options.format!,
 		},
 	}}
@@ -62,7 +62,7 @@ const { Content } = await artwork.render();
 			<div class="border-t-2 border-foreground mt-6 flex flex-wrap gap-8">
 				{
 					artwork.data.techniques ? (
-						<div>
+						<div class="mt-2">
 							<span class="font-semibold font-brand text-lg">
 								Techniques
 							</span>
@@ -80,7 +80,7 @@ const { Content } = await artwork.render();
 				}
 				{
 					artwork.data.materials ? (
-						<div>
+						<div class="mt-2">
 							<span class="font-semibold font-brand text-lg">
 								Materials
 							</span>

@@ -3,6 +3,7 @@ import Main from "@/layouts/main.astro";
 import { getImage, Image, Picture } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
+import homepageOgImageRaw from "@/assets/homepage.png";
 import { defaultLocale } from "astro.config.mjs";
 
 export type Props = {
@@ -22,9 +23,26 @@ const artworks = await Promise.all(
 		};
 	}),
 );
+
+const homepageOgImage = await getImage({
+	src: homepageOgImageRaw,
+	format: "webp",
+	width: 1200,
+	height: 630,
+});
 ---
 
-<Main>
+<Main
+	og={{
+		image: {
+			url: `${Astro.url.origin}/${homepageOgImage.src}`,
+			width: homepageOgImage.options.width!,
+			height: homepageOgImage.options.height!,
+			type: homepageOgImage.options.format!,
+			alt: "Homepage of the Art Gallery",
+		},
+	}}
+>
 	<section class="relative min-h-[80dvh]">
 		<h1 class="sr-only">Section of Artworks</h1>
 		<div
